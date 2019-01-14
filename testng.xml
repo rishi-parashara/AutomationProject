@@ -1,0 +1,20 @@
+
+<suite name="Suite"  parallel="tests">
+
+
+  <test name="Test1">
+  <groups>
+  	<run>
+  		<include name="smoke"/>  		
+  	</run>
+  </groups>
+  <parameter name="ip" value="localhost"/>
+  <parameter name="browser" value="chrome"/>
+	<packages>
+      <package name="script"/>
+    </packages>
+  </test>
+            
+</suite>
+
+

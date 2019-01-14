@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <parameter name="ip" value="localhost"/>
+  <parameter name="browser" value="chrome"/>
+  <test name="Test1(failed)" parallel="tests">
+    <parameter name="ip" value="localhost"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="script.TestVerifyProductVersion">
+        <methods>
+          <include name="openApp"/>
+          <include name="testVerifyProductVersion"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestVerifyProductVersion -->
+      <class name="script.TestInvalidLogin">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestInvalidLogin -->
+      <class name="script.TestValidLogin">
+        <methods>
+          <include name="openApp"/>
+          <include name="testValidLogin"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestValidLogin -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
