@@ -1,15 +1,9 @@
 package script;
 
-import org.testng.Assert;
-import org.testng.Reporter;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.yaml.snakeyaml.representer.Represent;
 
 import generic.BaseTest;
-import generic.Result;
 import generic.Utility;
-import generic.WebGeneric;
 import page.LoginPage;
 
 public class TestValidLogin extends BaseTest{
